@@ -1,0 +1,45 @@
+How do you review code? 
+Code review is normally a peered review in my team .Mostly done to improve the code quality and help learn a few things in the process.
+After committing and pushing the changes to Github we raise the PULL request and assign it to the reviewer to go through the changes.
+For me, I normally have a checklist of the mistakes mostly committed by the particular person and I go through them first.
+Also, I try and look for typos as well as structural errors like unused code and keywords or faulty logic.
+Most important to make sure that the module or function does what it is expected to do and that it is easy to read/maintain.
+
+
+
+
+How do you enforce coding standards? 
+I normally use Pylint for enforcing coding standards, it gives me things such as unused variables or import things without using them.
+Pylint also generates  a code report  including how many lines of code/comments/docstring/whitespace the file has, the number of messages per-category, and gives the code a score out of 10
+PyFlakes could also be used.
+
+
+
+
+How do you plan what kind of approach you take for test automation - what libraries to use, how does it work in a couple of years, how to make it easy to maintain, etc? What are the main points to consider? 
+The approach to test automation normally depends on the prevailing testing practices in the organization.
+Automation testing depends on the selection of the right testing automation architecture. One of the first steps towards selecting the right test automation tool is to understand the testing requirement in hand.
+(such as if the application is mostly mobile-centric then go for tools such as Appium)
+Another thing to consider would be to check the scale of test cases to be automated(more importantly understand all the test cases that cannot be automated), shortlist the test cases which need automation.
+I would also like to consider the tool compatibility with the current technology stack of the organization.
+The next point to consider would be to check whether the expertise needed to implement and maintain the tool is present within the team or not.
+
+The automation framework consists of a keyword-driven framework, a data-driven framework, and a hybrid framework. Based on the application or software one can choose the correct framework.
+The automation test suite should be scalable and covers the maximum number of test cases under the automation test suite. Common functionality can be considered while designing the automation framework so that the automation suite will be active and working across the functional area.
+
+To avoid high maintenance costs and time, one should revisit and update the automation test suite based on the latest version of the product over the period. This activity should be a continuous activity to remove stale test cases and upgrade the automation suite by adding new functionality.
+
+
+
+
+Code testability, how do you enforce it? 
+As per my understanding, the code is considered testable if works as it is expected to and it can be verified programmatically.
+It implies that the code covers the requirement at every level and in case of any failure it should let us know what went wrong and where so that the mistake can be corrected immediately.
+It can be enforced through Unit Testing.
+So basically it means independently testing small portions of the application and verifying its behavior.If the observed behavior is consistent with the expectations, the unit test passes, otherwise, it fails, indicating that there is a problem somewhere in the system under test.  
+
+
+How do you make sure that the product is testable? 
+Testability implies how easily the application or the product can be tested. A testable product ensures that it has passed all the processes of the software development life cycle. Assuming that the good test coverage is applied most of the defects will be uncovered and fixed before the product is released. This ensures customers will report a minimum number of defects.
+Testability should be the whole team approach meaning that quality should be in the picture as soon as possible in the development life cycle starting from the planning, design, and development phase. This includes emphasizing multiple facets such as documentation, logging, and requirements. The more knowledge a tester has of the product or feature, its purpose, and it’s expected behavior, the more valuable their testing and test results will be.
+One way to make sure about the product testability is to launch the MVP/MTP (minimum testable product) into the market and learn from the feedback. This gives the advantage of actually knowing the market demands instead of just assumptions. The fixes at this stage are also quite cheap as compared to in the integration phase.

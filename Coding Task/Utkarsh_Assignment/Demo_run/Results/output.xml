@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20200915 19:23:12.939" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite id="s1" name="1 UISuite &amp; 2 APISuite">
+<suite source="/home/utkarsh/Desktop/Coding Task/Utkarsh_Assignment/Demo_run/1_UISuite.robot" id="s1-s1" name="1 UISuite">
+<test id="s1-s1-t1" name="Register through web portal">
+<kw name="Launch Application" library="UIKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20200915 19:23:13.061" level="INFO">Opening browser 'gc' to base url 'http://0.0.0.0:8080'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.135" starttime="20200915 19:23:13.061"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.135" starttime="20200915 19:23:13.061"></status>
+</kw>
+<kw name="Register a new user" library="UIKeywords">
+<arguments>
+<arg>${Username_1}</arg>
+<arg>${Password}</arg>
+<arg>${FirstName}</arg>
+<arg>${FamilyName}</arg>
+<arg>${Phonenumber}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:14.167" starttime="20200915 19:23:14.137"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.168" level="INFO">Clicking element '//a[text()='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.255" starttime="20200915 19:23:14.168"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.256" starttime="20200915 19:23:14.167"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:14.283" starttime="20200915 19:23:14.256"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.284" level="INFO">Typing text 'Ut_pandey_1990_60' into text field '//*[text()='Username']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.385" starttime="20200915 19:23:14.284"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.386" starttime="20200915 19:23:14.283"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Password</arg>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.387" level="INFO">Typing password into text field '//*[text()='Password']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.458" starttime="20200915 19:23:14.386"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.458" starttime="20200915 19:23:14.386"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.459" level="INFO">Typing text 'Utkarsh' into text field '//*[text()='First name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.537" starttime="20200915 19:23:14.459"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.537" starttime="20200915 19:23:14.458"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.538" level="INFO">Typing text 'Pandey' into text field '//*[text()='Family Name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.612" starttime="20200915 19:23:14.538"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.612" starttime="20200915 19:23:14.538"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.613" level="INFO">Typing text '0403456787' into text field '//*[text()='Phone number']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:14.693" starttime="20200915 19:23:14.613"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:14.693" starttime="20200915 19:23:14.612"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:14.694" level="INFO">Clicking element '//input[@value='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.023" starttime="20200915 19:23:14.694"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.023" starttime="20200915 19:23:14.693"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.024" level="INFO">${Username} = Ut_pandey_1990_60</msg>
+<status status="PASS" endtime="20200915 19:23:15.024" starttime="20200915 19:23:15.023"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.025" level="INFO">${Password} = 12345</msg>
+<status status="PASS" endtime="20200915 19:23:15.025" starttime="20200915 19:23:15.024"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.025" level="INFO">${FirstName} = Utkarsh</msg>
+<status status="PASS" endtime="20200915 19:23:15.027" starttime="20200915 19:23:15.025"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.028" level="INFO">${FamilyName} = Pandey</msg>
+<status status="PASS" endtime="20200915 19:23:15.028" starttime="20200915 19:23:15.027"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.028" level="INFO">${PhoneNumber} = 0403456787</msg>
+<status status="PASS" endtime="20200915 19:23:15.028" starttime="20200915 19:23:15.028"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.028" starttime="20200915 19:23:14.136"></status>
+</kw>
+<kw name="Register a new user" library="UIKeywords">
+<arguments>
+<arg>${Username_2}</arg>
+<arg>${Password}</arg>
+<arg>${FirstName}</arg>
+<arg>${FamilyName}</arg>
+<arg>${Phonenumber}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:15.061" starttime="20200915 19:23:15.029"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.061" level="INFO">Clicking element '//a[text()='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.138" starttime="20200915 19:23:15.061"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.138" starttime="20200915 19:23:15.061"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:15.159" starttime="20200915 19:23:15.139"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.160" level="INFO">Typing text 'Ut_pandey_1990_61' into text field '//*[text()='Username']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.255" starttime="20200915 19:23:15.160"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.255" starttime="20200915 19:23:15.159"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Password</arg>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.256" level="INFO">Typing password into text field '//*[text()='Password']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.318" starttime="20200915 19:23:15.255"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.318" starttime="20200915 19:23:15.255"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.319" level="INFO">Typing text 'Utkarsh' into text field '//*[text()='First name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.393" starttime="20200915 19:23:15.319"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.393" starttime="20200915 19:23:15.318"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.394" level="INFO">Typing text 'Pandey' into text field '//*[text()='Family Name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.476" starttime="20200915 19:23:15.394"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.476" starttime="20200915 19:23:15.393"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.477" level="INFO">Typing text '0403456787' into text field '//*[text()='Phone number']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:15.554" starttime="20200915 19:23:15.476"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:15.554" starttime="20200915 19:23:15.476"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:15.555" level="INFO">Clicking element '//input[@value='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.027" starttime="20200915 19:23:15.555"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.028" starttime="20200915 19:23:15.554"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.028" level="INFO">${Username} = Ut_pandey_1990_61</msg>
+<status status="PASS" endtime="20200915 19:23:16.028" starttime="20200915 19:23:16.028"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.029" level="INFO">${Password} = 12345</msg>
+<status status="PASS" endtime="20200915 19:23:16.029" starttime="20200915 19:23:16.028"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.029" level="INFO">${FirstName} = Utkarsh</msg>
+<status status="PASS" endtime="20200915 19:23:16.029" starttime="20200915 19:23:16.029"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.030" level="INFO">${FamilyName} = Pandey</msg>
+<status status="PASS" endtime="20200915 19:23:16.030" starttime="20200915 19:23:16.029"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.030" level="INFO">${PhoneNumber} = 0403456787</msg>
+<status status="PASS" endtime="20200915 19:23:16.030" starttime="20200915 19:23:16.030"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.030" starttime="20200915 19:23:15.028"></status>
+</kw>
+<doc>Register users through web portal.This script registers 2 users in the system (separate user is created for the user for which the update is to be done by put request)</doc>
+<status status="PASS" endtime="20200915 19:23:16.031" critical="yes" starttime="20200915 19:23:13.060"></status>
+</test>
+<test id="s1-s1-t2" name="Review my own user information from the main view">
+<kw name="Login to Application" library="UIKeywords">
+<arguments>
+<arg>${Username_1}</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//a[text()='Log In']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Log In']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.036" level="INFO">Clicking element '//a[text()='Log In']'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.108" starttime="20200915 19:23:16.036"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.108" starttime="20200915 19:23:16.035"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//input[@value='Log In']</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:16.134" starttime="20200915 19:23:16.109"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.135" level="INFO">Typing text 'Ut_pandey_1990_60' into text field '//*[text()='Username']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.230" starttime="20200915 19:23:16.134"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.230" starttime="20200915 19:23:16.134"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Password</arg>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.231" level="INFO">Typing password into text field '//*[text()='Password']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.294" starttime="20200915 19:23:16.231"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.294" starttime="20200915 19:23:16.231"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//input[@value='Log In']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@value='Log In']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.295" level="INFO">Clicking element '//input[@value='Log In']'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.527" starttime="20200915 19:23:16.295"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.527" starttime="20200915 19:23:16.294"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.527" starttime="20200915 19:23:16.033"></status>
+</kw>
+<kw name="Review User Info" library="UIKeywords">
+<arguments>
+<arg>${Username_1}</arg>
+<arg>${FirstName}</arg>
+<arg>${FamilyName}</arg>
+<arg>${Phonenumber}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>User Information</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:16.542" starttime="20200915 19:23:16.528"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>//*[text()=' Username ']/following::td[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:16.569" starttime="20200915 19:23:16.542"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>//*[text()=' First name ']/following::td[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.592" level="INFO">Element '//*[text()=' First name ']/following::td[1]' contains text 'Utkarsh'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.592" starttime="20200915 19:23:16.569"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>//*[text()=' Last name ']/following::td[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.615" level="INFO">Element '//*[text()=' Last name ']/following::td[1]' contains text 'Pandey'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.616" starttime="20200915 19:23:16.592"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>//*[text()=' Phone number ']/following::td[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.638" level="INFO">Element '//*[text()=' Phone number ']/following::td[1]' contains text '0403456787'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.638" starttime="20200915 19:23:16.616"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.639" starttime="20200915 19:23:16.527"></status>
+</kw>
+<kw name="Log out of Application" library="UIKeywords">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>5s</arg>
+<arg>1s</arg>
+<arg>Click Link</arg>
+<arg>Log Out</arg>
+</arguments>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log Out</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.640" level="INFO">Clicking link 'Log Out'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.715" starttime="20200915 19:23:16.640"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.715" starttime="20200915 19:23:16.639"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.715" starttime="20200915 19:23:16.639"></status>
+</kw>
+<doc>After registration,this script verifies the user information.</doc>
+<status status="PASS" endtime="20200915 19:23:16.716" critical="yes" starttime="20200915 19:23:16.032"></status>
+</test>
+<test id="s1-s1-t3" name="Try to register a user which already exists">
+<kw name="Register a new user" library="UIKeywords">
+<arguments>
+<arg>${Username_1}</arg>
+<arg>${Password}</arg>
+<arg>${FirstName}</arg>
+<arg>${FamilyName}</arg>
+<arg>${Phonenumber}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:16.738" starttime="20200915 19:23:16.718"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.739" level="INFO">Clicking element '//a[text()='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.814" starttime="20200915 19:23:16.739"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.814" starttime="20200915 19:23:16.738"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:16.837" starttime="20200915 19:23:16.814"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.838" level="INFO">Typing text 'Ut_pandey_1990_60' into text field '//*[text()='Username']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:16.951" starttime="20200915 19:23:16.837"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:16.951" starttime="20200915 19:23:16.837"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Password</arg>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:16.952" level="INFO">Typing password into text field '//*[text()='Password']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.021" starttime="20200915 19:23:16.952"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.021" starttime="20200915 19:23:16.951"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.022" level="INFO">Typing text 'Utkarsh' into text field '//*[text()='First name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.094" starttime="20200915 19:23:17.022"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.094" starttime="20200915 19:23:17.021"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.095" level="INFO">Typing text 'Pandey' into text field '//*[text()='Family Name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.166" starttime="20200915 19:23:17.094"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.167" starttime="20200915 19:23:17.094"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.168" level="INFO">Typing text '0403456787' into text field '//*[text()='Phone number']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.244" starttime="20200915 19:23:17.167"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.245" starttime="20200915 19:23:17.167"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.245" level="INFO">Clicking element '//input[@value='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.319" starttime="20200915 19:23:17.245"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.319" starttime="20200915 19:23:17.245"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.319" level="INFO">${Username} = Ut_pandey_1990_60</msg>
+<status status="PASS" endtime="20200915 19:23:17.319" starttime="20200915 19:23:17.319"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.320" level="INFO">${Password} = 12345</msg>
+<status status="PASS" endtime="20200915 19:23:17.320" starttime="20200915 19:23:17.320"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.320" level="INFO">${FirstName} = Utkarsh</msg>
+<status status="PASS" endtime="20200915 19:23:17.320" starttime="20200915 19:23:17.320"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.321" level="INFO">${FamilyName} = Pandey</msg>
+<status status="PASS" endtime="20200915 19:23:17.321" starttime="20200915 19:23:17.321"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.321" level="INFO">${PhoneNumber} = 0403456787</msg>
+<status status="PASS" endtime="20200915 19:23:17.321" starttime="20200915 19:23:17.321"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.321" starttime="20200915 19:23:16.717"></status>
+</kw>
+<kw name="Check Message" library="UIKeywords">
+<arguments>
+<arg>User ${Username_1} is already registered.</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${Text}</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:17.334" starttime="20200915 19:23:17.322"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.334" starttime="20200915 19:23:17.321"></status>
+</kw>
+<doc>This script verifies the valisation message shown to the user on trying to register a user which already exists in the system.</doc>
+<status status="PASS" endtime="20200915 19:23:17.335" critical="yes" starttime="20200915 19:23:16.716"></status>
+</test>
+<test id="s1-s1-t4" name="Success message verification on registration">
+<kw name="Register a new user" library="UIKeywords">
+<arguments>
+<arg>SUCCESS_USER_61</arg>
+<arg>${Password}</arg>
+<arg>${FirstName}</arg>
+<arg>${FamilyName}</arg>
+<arg>${Phonenumber}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:17.356" starttime="20200915 19:23:17.338"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.357" level="INFO">Clicking element '//a[text()='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.418" starttime="20200915 19:23:17.357"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.418" starttime="20200915 19:23:17.356"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:17.441" starttime="20200915 19:23:17.418"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Username']/following::input[1]</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.442" level="INFO">Typing text 'SUCCESS_USER_61' into text field '//*[text()='Username']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.540" starttime="20200915 19:23:17.442"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.540" starttime="20200915 19:23:17.441"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Password</arg>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Password']/following::input[1]</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.540" level="INFO">Typing password into text field '//*[text()='Password']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.609" starttime="20200915 19:23:17.540"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.609" starttime="20200915 19:23:17.540"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='First name']/following::input[1]</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.610" level="INFO">Typing text 'Utkarsh' into text field '//*[text()='First name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.683" starttime="20200915 19:23:17.610"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.683" starttime="20200915 19:23:17.609"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Family Name']/following::input[1]</arg>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.684" level="INFO">Typing text 'Pandey' into text field '//*[text()='Family Name']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.754" starttime="20200915 19:23:17.684"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.754" starttime="20200915 19:23:17.683"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Input Text</arg>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Phone number']/following::input[1]</arg>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.755" level="INFO">Typing text '0403456787' into text field '//*[text()='Phone number']/following::input[1]'.</msg>
+<status status="PASS" endtime="20200915 19:23:17.836" starttime="20200915 19:23:17.754"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:17.836" starttime="20200915 19:23:17.754"></status>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<arguments>
+<arg>10s</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@value='Register']</arg>
+</arguments>
+<msg timestamp="20200915 19:23:17.837" level="INFO">Clicking element '//input[@value='Register']'.</msg>
+<status status="PASS" endtime="20200915 19:23:18.152" starttime="20200915 19:23:17.837"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:18.152" starttime="20200915 19:23:17.837"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:18.153" level="INFO">${Username} = SUCCESS_USER_61</msg>
+<status status="PASS" endtime="20200915 19:23:18.153" starttime="20200915 19:23:18.152"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:18.154" level="INFO">${Password} = 12345</msg>
+<status status="PASS" endtime="20200915 19:23:18.154" starttime="20200915 19:23:18.153"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:18.155" level="INFO">${FirstName} = Utkarsh</msg>
+<status status="PASS" endtime="20200915 19:23:18.155" starttime="20200915 19:23:18.154"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FamilyName}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:18.155" level="INFO">${FamilyName} = Pandey</msg>
+<status status="PASS" endtime="20200915 19:23:18.155" starttime="20200915 19:23:18.155"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${PhoneNumber}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:18.155" level="INFO">${PhoneNumber} = 0403456787</msg>
+<status status="PASS" endtime="20200915 19:23:18.155" starttime="20200915 19:23:18.155"></status>
+</kw>
+<status status="PASS" endtime="20200915 19:23:18.156" starttime="20200915 19:23:17.337"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>"User successfully registered"</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200915 19:23:23.303" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200915 19:23:23.303" starttime="20200915 19:23:23.203"></status>
+</kw>
+<msg timestamp="20200915 19:23:23.304" level="FAIL">Text '"User successfully registered"' did not appear in 5 seconds.</msg>
+<status status="FAIL" endtime="20200915 19:23:23.304" starttime="20200915 19:23:18.156"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20200915 19:23:23.368" starttime="20200915 19:23:23.304"></status>
+</kw>
+<doc>Bug/Improvement: Successful user registration should show a success message.Currently there is no notification if user is registered or not</doc>
+<status status="FAIL" endtime="20200915 19:23:23.368" critical="yes" starttime="20200915 19:23:17.336">Text '"User successfully registered"' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" endtime="20200915 19:23:23.369" starttime="20200915 19:23:12.969"></status>
+</suite>
+<suite source="/home/utkarsh/Desktop/Coding Task/Utkarsh_Assignment/Demo_run/2_APISuite.robot" id="s1-s2" name="2 APISuite">
+<test id="s1-s2-t1" name="Review user registered in system">
+<kw name="Check User Registered In System" library="python_file">
+<arguments>
+<arg>${URL}/api/users</arg>
+<arg>${Username_1}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+<var>${users}</var>
+</assign>
+<msg timestamp="20200915 19:23:23.382" level="INFO">[u'   ', u'111', u'A B', u'SUCCESS_USER', u'SUCCESS_USER_1', u'SUCCESS_USER_12', u'SUCCESS_USER_123', u'SUCCESS_USER_1234', u'SUCCESS_USER_41', u'SUCCESS_USER_51', u'SUCCESS_USER_61', u'Som123', u'TestUser', u'Ut_Pandey_1', u'Ut_Pandey_2', u'Ut_pandey', u'Ut_pandey_1990', u'Ut_pandey_1990_10', u'Ut_pandey_1990_11', u'Ut_pandey_1990_14', u'Ut_pandey_1990_15', u'Ut_pandey_1990_20', u'Ut_pandey_1990_21', u'Ut_pandey_1990_3', u'Ut_pandey_1990_30', u'Ut_pandey_1990_31', u'Ut_pandey_1990_4', u'Ut_pandey_1990_40', u'Ut_pandey_1990_41', u'Ut_pandey_1990_5', u'Ut_pandey_1990_50', u'Ut_pandey_1990_51', u'Ut_pandey_1990_6', u'Ut_pandey_1990_60', u'Ut_pandey_1990_61', u'Ut_pandey_1990_7', u'Ut_pandey_1990_8', u'Ut_pandey_1990_9', u'numerouno', u'testuser', u'ttt', u'ut_pandey', u'\xc4 \xc4', u'\xc4\xc4\xc4\xc4\xc4', u'\xc4\xc4\xc4\xc4\xc4 \xc4\xc4\xc4\xc4\xc4 ']</msg>
+<msg timestamp="20200915 19:23:23.383" level="INFO">${status} = True</msg>
+<msg timestamp="20200915 19:23:23.383" level="INFO">${users} = [u'   ', u'111', u'A B', u'SUCCESS_USER', u'SUCCESS_USER_1', u'SUCCESS_USER_12', u'SUCCESS_USER_123', u'SUCCESS_USER_1234', u'SUCCESS_USER_41', u'SUCCESS_USER_51', u'SUCCESS_USER_61', u'Som123', u'Tes...</msg>
+<status status="PASS" endtime="20200915 19:23:23.383" starttime="20200915 19:23:23.378"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${status}</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:23.383" starttime="20200915 19:23:23.383"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${users}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:23.384" level="INFO">[u'   ', u'111', u'A B', u'SUCCESS_USER', u'SUCCESS_USER_1', u'SUCCESS_USER_12', u'SUCCESS_USER_123', u'SUCCESS_USER_1234', u'SUCCESS_USER_41', u'SUCCESS_USER_51', u'SUCCESS_USER_61', u'Som123', u'TestUser', u'Ut_Pandey_1', u'Ut_Pandey_2', u'Ut_pandey', u'Ut_pandey_1990', u'Ut_pandey_1990_10', u'Ut_pandey_1990_11', u'Ut_pandey_1990_14', u'Ut_pandey_1990_15', u'Ut_pandey_1990_20', u'Ut_pandey_1990_21', u'Ut_pandey_1990_3', u'Ut_pandey_1990_30', u'Ut_pandey_1990_31', u'Ut_pandey_1990_4', u'Ut_pandey_1990_40', u'Ut_pandey_1990_41', u'Ut_pandey_1990_5', u'Ut_pandey_1990_50', u'Ut_pandey_1990_51', u'Ut_pandey_1990_6', u'Ut_pandey_1990_60', u'Ut_pandey_1990_61', u'Ut_pandey_1990_7', u'Ut_pandey_1990_8', u'Ut_pandey_1990_9', u'numerouno', u'testuser', u'ttt', u'ut_pandey', u'\xc4 \xc4', u'\xc4\xc4\xc4\xc4\xc4', u'\xc4\xc4\xc4\xc4\xc4 \xc4\xc4\xc4\xc4\xc4 ']</msg>
+<status status="PASS" endtime="20200915 19:23:23.384" starttime="20200915 19:23:23.383"></status>
+</kw>
+<doc>Review users registered in the system.It will check if the user is registered in the system and will also log all the users registered in the system in the robot logs.</doc>
+<status status="PASS" endtime="20200915 19:23:23.384" critical="yes" starttime="20200915 19:23:23.377"></status>
+</test>
+<test id="s1-s2-t2" name="Authenticate user and get user details">
+<kw name="Authenticate User And Get Token" library="python_file">
+<arguments>
+<arg>${URL}/api/auth/token</arg>
+<arg>${Username_1}</arg>
+<arg>${Password}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+<var>${token}</var>
+</assign>
+<msg timestamp="20200915 19:23:23.671" level="INFO">${status} = True</msg>
+<msg timestamp="20200915 19:23:23.672" level="INFO">${token} = MzI2MTYxMTk0NTQxODAzNDk3MDQwMzU5MDcwODIyNzcxNTQyNTE0</msg>
+<status status="PASS" endtime="20200915 19:23:23.672" starttime="20200915 19:23:23.385"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${status}</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:23.672" starttime="20200915 19:23:23.672"></status>
+</kw>
+<kw name="Get User Info" library="python_file">
+<arguments>
+<arg>${URL}/api/users/${Username_1}</arg>
+<arg>${token}</arg>
+</arguments>
+<assign>
+<var>${Get_user_data}</var>
+</assign>
+<msg timestamp="20200915 19:23:23.676" level="INFO">${Get_user_data} = {'lastname': 'Pandey', 'firstname': 'Utkarsh', 'phone': '0403456787'}</msg>
+<status status="PASS" endtime="20200915 19:23:23.676" starttime="20200915 19:23:23.672"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Get_user_data}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:23.677" level="INFO">{'lastname': 'Pandey', 'firstname': 'Utkarsh', 'phone': '0403456787'}</msg>
+<status status="PASS" endtime="20200915 19:23:23.677" starttime="20200915 19:23:23.676"></status>
+</kw>
+<doc>Gets the user info by first authenticating with username and password.</doc>
+<status status="PASS" endtime="20200915 19:23:23.677" critical="yes" starttime="20200915 19:23:23.384"></status>
+</test>
+<test id="s1-s2-t3" name="Authenticate user and Update user details">
+<kw name="Authenticate User And Get Token" library="python_file">
+<arguments>
+<arg>${URL}/api/auth/token</arg>
+<arg>${Username_2}</arg>
+<arg>${Password}</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+<var>${token}</var>
+</assign>
+<msg timestamp="20200915 19:23:23.915" level="INFO">${status} = True</msg>
+<msg timestamp="20200915 19:23:23.915" level="INFO">${token} = NjM4ODI3MzkzNjYzMDI3NjI4ODE0NDIwMzcxMDg1OTk2ODgyNzk=</msg>
+<status status="PASS" endtime="20200915 19:23:23.916" starttime="20200915 19:23:23.678"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${status}</arg>
+</arguments>
+<status status="PASS" endtime="20200915 19:23:23.916" starttime="20200915 19:23:23.916"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>lastname=Sambar</arg>
+<arg>firstname=Somia</arg>
+<arg>phone=0403456787</arg>
+</arguments>
+<assign>
+<var>${payload}</var>
+</assign>
+<msg timestamp="20200915 19:23:23.917" level="INFO">${payload} = {u'lastname': u'Sambar', u'firstname': u'Somia', u'phone': u'0403456787'}</msg>
+<status status="PASS" endtime="20200915 19:23:23.917" starttime="20200915 19:23:23.916"></status>
+</kw>
+<kw name="Update User Info" library="python_file">
+<arguments>
+<arg>${URL}/api/users/${Username_2}</arg>
+<arg>${token}</arg>
+<arg>${payload}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:24.031" level="INFO">{"message":"Updated","status":"SUCCESS"}</msg>
+<status status="PASS" endtime="20200915 19:23:24.031" starttime="20200915 19:23:23.917"></status>
+</kw>
+<kw name="Get User Info" library="python_file">
+<arguments>
+<arg>${URL}/api/users/${Username_2}</arg>
+<arg>${token}</arg>
+</arguments>
+<assign>
+<var>${Get_user_data}</var>
+</assign>
+<msg timestamp="20200915 19:23:24.035" level="INFO">${Get_user_data} = {'lastname': 'Sambar', 'firstname': 'Somia', 'phone': '0403456787'}</msg>
+<status status="PASS" endtime="20200915 19:23:24.035" starttime="20200915 19:23:24.031"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${payload}</arg>
+<arg>${Get_user_data}</arg>
+</arguments>
+<msg timestamp="20200915 19:23:24.036" level="INFO">Argument types are:
+&lt;class 'robot.utils.dotdict.DotDict'&gt;
+&lt;type 'dict'&gt;</msg>
+<status status="PASS" endtime="20200915 19:23:24.036" starttime="20200915 19:23:24.035"></status>
+</kw>
+<doc>Updates the user info by first authenticating with username and password.</doc>
+<tags>
+<tag>put</tag>
+</tags>
+<status status="PASS" endtime="20200915 19:23:24.036" critical="yes" starttime="20200915 19:23:23.677"></status>
+</test>
+<status status="PASS" endtime="20200915 19:23:24.036" starttime="20200915 19:23:23.371"></status>
+</suite>
+<status status="FAIL" endtime="20200915 19:23:24.038" starttime="20200915 19:23:12.942"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="6">Critical Tests</stat>
+<stat fail="1" pass="6">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">put</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="1 UISuite &amp; 2 APISuite" pass="6">1 UISuite &amp; 2 APISuite</stat>
+<stat fail="1" id="s1-s1" name="1 UISuite" pass="3">1 UISuite &amp; 2 APISuite.1 UISuite</stat>
+<stat fail="0" id="s1-s2" name="2 APISuite" pass="3">1 UISuite &amp; 2 APISuite.2 APISuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,25 @@
+Tell us what improvement would you propose for the app 
+
+
+
+1.First would be to make the app bug free of all the obvious bugs which had been mentioned in the Exploratory Test Report
+2.UI could be made more user friendly and attractive.
+3.User registration should have email field and have email verification in place or OTP verification.
+
+
+
+
+
+If you would be given a week to do quality assurance for this product, briefly plan the tasks based on your skills, knowledge and expertise 
+
+
+The steps which I have learnt over the years of working as a QA Engineer would be to :
+
+1. Define what needs to be tested: Based on the Qualitative or Quantitative analysis we need to make sure to have a clear view of what needs to be tested and what would be the impacted systems .Thus helping in the creation of Test cases and Test scenarios.
+
+2.Establish the pass/fail criteria: Define the acceptance critera .
+
+3.Documentation: Although in the agile model it's very tricky to have proper documentation but little documentation is better than no documentation. This helps in case someone needs to go back and look back at the fuctionality as well as if a new member joins the team this is benefical for them as well.
+
+
+

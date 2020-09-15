@@ -1,0 +1,8 @@
+*** Variables ***
+${URL}            http://0.0.0.0:8080
+${Username_1}     Ut_pandey_1990_1
+${Password}       12345
+${FirstName}      Utkarsh
+${FamilyName}     Pandey
+${Phonenumber}    0403456787
+${Username_2}     Ut_pandey_1990_2

@@ -1,0 +1,25 @@
+Steps to run the tests:
+
+Pre-requisites: json and requests library
+
+
+1) UI tests should be run first by executing the tests in 1 UISuite before running the API tests(2 APISuite).
+   Users registered by executing UI tests are used for API tests in robot framework as well as for python unit tests.
+
+2) python_file.py implements the api functions used by robot api tests and python unit tests
+
+3) unittests.py contains the unit tests for the python_file.py functions.
+
+4) Same test data should be used in robot UI tests and api tests as the user registered from UI are used for API calls.
+
+
+5) Robot tests can be run directly from the editor or could be run via terminal.
+
+6) In order to execute unittests,go to the project directory and execute the following command:
+   python -m unittest -v unittests.TestMethods
+
+
+
+
+Started working over it during the weekend ,and did some final runs on Tuesday .
+So could day that it took around 3 days time in total for all the coding and testing related stuff.
